@@ -35,8 +35,7 @@ sliced array which are then cropped/resized which ever is needed foo maiking the
 Each ohrc image is compared to each tmc image.
 
 ## Stacks used
-1.Pandas
-2.Shapely
-3.Cvxpy
-4.Maxrect
-
+1. Pandas
+2. Shapely
+3. Cvxpy
+4. Maxrect

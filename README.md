@@ -13,6 +13,11 @@ We used ***PDS4 Viewer*** for viewing large xml files. Following is the installa
 ``` !pip install pds4_tools```
 
 
-
-
+## Stacks Used
+1. pds4_tools
+2. skimage
+3. torchmetrics
+4. glob
+5. tqdm
+6. PIL
 

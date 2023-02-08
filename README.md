@@ -6,31 +6,12 @@ As we know that the problem statement is regarding enchancement of low resolutio
 
 The srresnet.py file contains the code for the model of 21 layer deep network which we have used to train the images i.e from Low resolution to High Resolution images. We have trained the images and saved the weights of the model .
 
-
-#### Overlap_calculator.ipynb
-
-This code will help you to find the common parts of OHRC and TMC2 images and then cut out the largest rectangle which could be used for our training where the TMC2 part will be our input variable to our model and OHRC part will be our target variable to our model
-
-#### SRResNet_training.ipynb
-
-MSE-based SRResNet network is trained as initialization for the generator when training the actual GAN to avoid undesired local optima. we will be using this model for upscalling our images.
-
 ## Installation :
 
 We used ***PDS4 Viewer*** for viewing large xml files. Following is the installation code in python for the same:
 
 ``` !pip install pds4_tools```
 
-After finding the overlapping patch in TMC nad OHRC images, we need to get the rectangular image of maximum area, for that we used **MaxRect** library. Following is the installation code :
-
-``` pip install git+https://${GITHUB_TOKEN}@github.com/planetlabs/maxrect.git```
-
-We used the ***Spectral Angle Mapper*** as metric for validating our model. We imported that metric from **TorchMetrics**, the installation code is :
-
-```
-!pip install torchmetrics 
-from torchmetrics import SpectralAngleMapper 
-```
 
 ## Stacks Used
 1. pds4_tools
@@ -39,4 +20,23 @@ from torchmetrics import SpectralAngleMapper
 4. glob
 5. tqdm
 6. PIL
+
+
+Overlap calculator
+
+This file uses the meta data given with the images to return overlapping pairs of tmc and ohrc image which can be 
+used as input and lable for our model.The meta data contains latitude and longitude of every 100th element of the image.
+These latitude and longitude represent the real senario of image om surface of moon. Now the boundary of each image 
+using these latitude and longitude is determined which is used for calculating the overlaping region which can be any polygon.
+But for the convenience we reduce the region into a rectangle which can we used for training because model takes rectangles as 
+input!.The boundary of this rectangle is used to get the pixel and scan value of each boundary point which are used for 
+slicing the whole image, 2 sets of these are determined one for tmc and other for ohrc image. Images are then formed using the 
+sliced array which are then cropped/resized which ever is needed foo maiking them sutaible for training.
+Each ohrc image is compared to each tmc image.
+
+## Stacks used
+1.Pandas
+2.Shapely
+3.Cvxpy
+4.Maxrect
 

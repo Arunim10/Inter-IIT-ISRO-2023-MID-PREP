@@ -42,7 +42,7 @@ from torchmetrics import SpectralAngleMapper
 ```
 
 ## Stacks Used :
-1). pds4_tools [Link](https://pypi.org/project/pds4-tools/)
+1). [pds4_tools](https://pypi.org/project/pds4-tools/)
 
 2). skimage [Link](https://scikit-image.org/)
 

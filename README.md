@@ -44,13 +44,13 @@ from torchmetrics import SpectralAngleMapper
 ## Stacks Used :
 1). [pds4_tools](https://pypi.org/project/pds4-tools/)
 
-2). skimage [Link](https://scikit-image.org/)
+2). [skimage](https://scikit-image.org/)
 
-3). torchmetrics [Link](https://pypi.org/project/torchmetrics/)
+3). [torchmetrics](https://pypi.org/project/torchmetrics/)
 
-4). glob [Link](https://github.com/python/cpython/blob/3.11/Lib/glob.py)
+4). [glob](https://github.com/python/cpython/blob/3.11/Lib/glob.py)
 
-5). tqdm [Link](https://tqdm.github.io/)
+5). [tqdm](https://tqdm.github.io/)
 
-6). PIL [Link](https://pypi.org/project/Pillow/)
+6). [PIL](https://pypi.org/project/Pillow/)
 

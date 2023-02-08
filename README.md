@@ -12,6 +12,16 @@ We used ***PDS4 Viewer*** for viewing large xml files. Following is the installa
 
 ``` !pip install pds4_tools```
 
+After finding the overlapping patch in TMC nad OHRC images, we need to get the rectangular image of maximum area, for that we used **MaxRect** library. Following is the installation code :
+
+``` pip install git+https://${GITHUB_TOKEN}@github.com/planetlabs/maxrect.git```
+
+We used the ***Spectral Angle Mapper*** as metric for validating our model. We imported that metric from **TorchMetrics**, the installation code is :
+
+```
+!pip install torchmetrics 
+from torchmetrics import SpectralAngleMapper 
+```
 
 ## Stacks Used
 1. pds4_tools

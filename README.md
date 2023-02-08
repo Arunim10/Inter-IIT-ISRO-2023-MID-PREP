@@ -12,7 +12,7 @@ TMC data downloaded : [Link](https://drive.google.com/drive/folders/1OEmK24mGoaS
 
 As we know that the problem statement is regarding enchancement of low resolution images(TMC dataset) to higher resolution, we used **SRResnet model**.
 
-The srresnet.py file contains the code for the model of 21 layer deep network which we have used to train the images i.e from Low resolution to High Resolution images. We have trained the images and saved the weights of the model .
+The srresnet.ipynb file contains the code for the model of 21 layer deep network which we have used to train the images i.e from Low resolution to High Resolution images. We have trained the images and saved the weights of the model .
 
 **Training Data**
 OHRC images are cropped to 1024x1024 dimensions and saved as .png files to be used for training. These images are de-resolutioned during traning to create input and corresponding output.

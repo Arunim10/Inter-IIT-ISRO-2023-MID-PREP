@@ -6,6 +6,15 @@ As we know that the problem statement is regarding enchancement of low resolutio
 
 The srresnet.py file contains the code for the model of 21 layer deep network which we have used to train the images i.e from Low resolution to High Resolution images. We have trained the images and saved the weights of the model .
 
+
+#### Overlap_calculator.ipynb
+
+This code will help you to find the common parts of OHRC and TMC2 images and then cut out the largest rectangle which could be used for our training where the TMC2 part will be our input variable to our model and OHRC part will be our target variable to our model
+
+#### SRResNet_training.ipynb
+
+MSE-based SRResNet network is trained as initialization for the generator when training the actual GAN to avoid undesired local optima. we will be using this model for upscalling our images.
+
 ## Installation :
 
 We used ***PDS4 Viewer*** for viewing large xml files. Following is the installation code in python for the same:

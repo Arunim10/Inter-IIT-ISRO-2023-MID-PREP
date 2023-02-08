@@ -1,10 +1,11 @@
 # Inter-IIT-ISRO-2023-MID-PREP
 
-### Google Drive Link to work on: https://drive.google.com/drive/folders/11FiTwiMUyVE1lkbSG6gU9WpdbcG7EVpS?usp=share_link
+### Google Drive Link to work on: [Link](https://drive.google.com/drive/folders/11FiTwiMUyVE1lkbSG6gU9WpdbcG7EVpS?usp=share_link)
 
-###DATASET LINK:
-OHRC datas downloaded:https://drive.google.com/drive/folders/1W5D474XQA1pnF4KYgLzVVAgW2F2UcHEa?usp=sharing
-TMC data downloaded : https://drive.google.com/drive/folders/1OEmK24mGoaSdu2dZx2hNBBBCgqNO00f9?usp=sharing
+DATASET LINK:
+OHRC datas downloaded:[Link](https://drive.google.com/drive/folders/1W5D474XQA1pnF4KYgLzVVAgW2F2UcHEa?usp=sharing)
+
+TMC data downloaded : [Link](https://drive.google.com/drive/folders/1OEmK24mGoaSdu2dZx2hNBBBCgqNO00f9?usp=sharing)
 
 ### Cropped OHRC train-test datatset : [Link](https://www.kaggle.com/datasets/arijitdas2002/tudumm) 
 
